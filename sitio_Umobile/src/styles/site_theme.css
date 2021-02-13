@@ -6,14 +6,14 @@
     margin: 0px;
     padding: 0px;
     /*Fuente instalada desde Google Font*/
-    font-family: 'Sansita Swashed', cursive;
+    font-family: 'Oxygen', sans-serif;
 }
 
 
 /*Estilo de las barras de navegacion y de pie de pagina*/
 
 .style_Bars {
-    background-color: red;
+    background-color: #0a47a4;
 }
 
 
