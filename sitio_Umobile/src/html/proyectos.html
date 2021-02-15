@@ -2,32 +2,33 @@
 <html lang="en">
 
 <head>
-    <title>Proyectos y eventos</title>
-    <!-- Required meta tags -->
+    <!-- Meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
-    <!--Estilos para la pagina-->
+    <!-- CSS local -->
+    <link rel="stylesheet" href="../styles/bodyContacto.css">
     <link rel="stylesheet" href="../styles/navbar_sitio.css">
-    <link rel="stylesheet" href="../styles/sections_sitio.css">
     <link rel="stylesheet" href="../styles/footer_sitio.css">
     <link rel="stylesheet" href="../styles/site_theme.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <!--Fuentes instaladas desde Google Fonts-->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/cards.css">
+    <!-- Bootstrap CSS CND -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <!-- Font Awesome CND -->
+    <script src="https://kit.fontawesome.com/a4c1be88d0.js" crossorigin="anonymous"></script>
+    <!-- Google Font -->
+    <link href='https://fonts.googleapis.com/css?family=Oxygen:400,300,700' rel='stylesheet' type='text/css'>
 
-    <link rel="stylesheet" href="../styles/estilosProyectos.css">
+
+
+    <title>Proyectos</title>
 </head>
 
 <body>
-
     <!-- Nav bar del pasho -->
     <!--Barra de navegación del sitio-->
-    <nav class="navbar navbar-expand-md navbar-dark sticky-top">
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top">
         <a class="navbar-brand" href="#">
             <!--cambiar el jpg por un svg-->
             <img src="../../resources/img/wcw6xZWO_400x400.jpg" class="brand-img">
@@ -55,101 +56,176 @@
                 </li>
             </ul>
             <!--form class="form-inline my-2 my-lg-0">
-                <input class="form-control mr-sm-2" type="text" placeholder="Buscar">
-                <button class="btn btn-outline-warning my-2 my-sm-0" type="submit">Buscar</button>
-            </form-->
+                    <input class="form-control mr-sm-2" type="text" placeholder="Buscar">
+                    <button class="btn btn-outline-warning my-2 my-sm-0" type="submit">Buscar</button>
+                </form-->
         </div>
 
     </nav><!-- Fin del nav bar -->
 
-    <!-- Inicio del deck de cards -->
 
-    <div class="container mt-3">
-        <div class="row">
+    <!-- Agregando un contenedor fluido -->
+    <div class="container-fluid">
 
-            <div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4">
-                <div class="container">
-                    <div class="wrap">
-                        <div class="tarjeta-wrap">
-                            <div class="tarjeta">
-                                <div class="adelante card1"></div>
-                                <div class="atras">
-                                    <p>Puma Home
-                                        <br>
-                                        <br>
-                                        Somos bien chidos e hicimos una app!
-                                    </p>
-                                </div>
-                            </div>
+        <!-- Creando un row con d-flex centrado -->
+        <div class="row d-flex justify-content-center align-items-center">
+
+            <!-- Creando una flip card que entrará de forma automática -->
+            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="../../resources/img/card.jpg" alt="Avatar" style="width:300px;height:300px;">
+                            <footer>
+                                <h1>Eureka!</h1>
+                            </footer>
+                        </div>
+                        <div class="flip-card-back">
+                            <h1>Nombre de proyecto</h1>
+                            <p>Descripción</p>
+                            <p>...</p>
                         </div>
                     </div>
                 </div>
-            </div>
+            </a>
 
-
-            <div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4">
-                <div class="container">
-                    <div class="wrap">
-                        <div class="tarjeta-wrap">
-                            <div class="tarjeta">
-                                <div class="adelante card2"></div>
-                                <div class="atras">
-                                    <p>Eureka!
-                                        <br>
-                                        <br>
-                                        También una plataforma para enseñar
-                                    </p>
-                                </div>
-                            </div>
+            <!-- Creando una flip card que entrará de forma automática -->
+            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="../../resources/img/card.jpg" alt="Avatar" style="width:300px;height:300px;">
+                            <footer>
+                                <h1>Eureka!</h1>
+                            </footer>
+                        </div>
+                        <div class="flip-card-back">
+                            <h1>Nombre de proyecto</h1>
+                            <p>Descripción</p>
+                            <p>...</p>
                         </div>
                     </div>
                 </div>
-            </div>
+            </a>
 
-
-            <div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4">
-                <div class="container">
-                    <div class="wrap">
-                        <div class="tarjeta-wrap">
-                            <div class="tarjeta">
-                                <div class="adelante card3"></div>
-                                <div class="atras">
-                                    <p>Cursos
-                                        <br>
-                                        <br>
-                                        Y damos cursos
-                                    </p>
-                                </div>
-                            </div>
+            <!-- Creando una flip card que entrará de forma automática -->
+            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="../../resources/img/card.jpg" alt="Avatar" style="width:300px;height:300px;">
+                            <footer>
+                                <h1>Eureka!</h1>
+                            </footer>
+                        </div>
+                        <div class="flip-card-back">
+                            <h1>Nombre de proyecto</h1>
+                            <p>Descripción</p>
+                            <p>...</p>
                         </div>
                     </div>
                 </div>
-            </div>
+            </a>
 
+            <!-- Creando una flip card que entrará de forma automática -->
+            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="../../resources/img/card.jpg" alt="Avatar" style="width:300px;height:300px;">
+                            <footer>
+                                <h1>Eureka!</h1>
+                            </footer>
+                        </div>
+                        <div class="flip-card-back">
+                            <h1>Nombre de proyecto</h1>
+                            <p>Descripción</p>
+                            <p>...</p>
+                        </div>
+                    </div>
+                </div>
+            </a>
 
+            <!-- Creando una flip card que entrará de forma automática -->
+            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="../../resources/img/card.jpg" alt="Avatar" style="width:300px;height:300px;">
+                            <footer>
+                                <h1>Eureka!</h1>
+                            </footer>
+                        </div>
+                        <div class="flip-card-back">
+                            <h1>Nombre de proyecto</h1>
+                            <p>Descripción</p>
+                            <p>...</p>
+                        </div>
+                    </div>
+                </div>
+            </a>
+
+            <!-- Creando una flip card que entrará de forma automática -->
+            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="../../resources/img/card.jpg" alt="Avatar" style="width:300px;height:300px;">
+                            <footer>
+                                <h1>Eureka!</h1>
+                            </footer>
+                        </div>
+                        <div class="flip-card-back">
+                            <h1>Nombre de proyecto</h1>
+                            <p>Descripción</p>
+                            <p>...</p>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <!-- Creando una flip card que entrará de forma automática -->
+            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="../../resources/img/card.jpg" alt="Avatar" style="width:300px;height:300px;">
+                            <footer>
+                                <h1>Eureka!</h1>
+                            </footer>
+                        </div>
+                        <div class="flip-card-back">
+                            <h1>Nombre de proyecto</h1>
+                            <p>Descripción</p>
+                            <p>...</p>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <!-- Creando una flip card que entrará de forma automática -->
+            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="../../resources/img/card.jpg" alt="Avatar" style="width:300px;height:300px;">
+                            <footer>
+                                <h1>Eureka!</h1>
+                            </footer>
+                        </div>
+                        <div class="flip-card-back">
+                            <h1>Nombre de proyecto</h1>
+                            <p>Descripción</p>
+                            <p>...</p>
+                        </div>
+                    </div>
+                </div>
+            </a>
+
+            <footer class="style_Bars style_footer">
+                Copyright @ UNAM Mobile
+            </footer> <!-- Footer -->
+            
         </div>
-
-    </div> <!-- Fin del deck -->
-
-
-    <!-- Footer -->
-    <footer class="style_Bars style_footer">
-        plantilla basica de sitio web: @musalori
-    </footer> <!-- Fin del footer -->
-
-
-
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-        crossorigin="anonymous"></script>
+    </div>
 </body>
 
 </html>

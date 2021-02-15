@@ -1,0 +1,19 @@
+body {
+  padding-top: 15%;
+}
+
+@media screen and (max-width: 767px) {
+  body {
+    padding-top: 150px;
+  }
+}
+
+p {
+  text-align: center;
+}
+
+p, div .col-sm div {
+  margin-left: 8px;
+  margin-right: 8px;
+  border: 3px solid black;
+}
