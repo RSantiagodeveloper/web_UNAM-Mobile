@@ -46,3 +46,16 @@
     color: white;
     transform: rotateY(180deg);
   }
+
+  #card-1 {
+    --animate-duration: 2000ms;
+  }
+  #card-2 {
+    --animate-duration: 1600ms;
+  }
+  #card-3 {
+    --animate-duration: 1200ms;
+  }
+  #card-4 {
+    --animate-duration: 800ms;
+  }

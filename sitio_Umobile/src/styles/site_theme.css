@@ -5,6 +5,7 @@
 * {
     margin: 0px;
     padding: 0px;
+    background-size: cover;
     /*Fuente instalada desde Google Font*/
     font-family: 'Oxygen', sans-serif;
 }
