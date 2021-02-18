@@ -1,20 +1,18 @@
-<!--NOTA: Archivo corregido en parte.
+<!--NOTA: Archivo añadido.
     Version de bootstrap Actualizada y centralizada a 4.6.x habian cuando menos 3 versiones de Bootstrap diferentes en el proyecto
-    Eliminados los elementos sobrantes
     Indexados todos los elementos en la NAVBAR
+    Solo estan agregados los elementos base
     El FOOTER para esta pagina fue fijado al fondo, Se puede modificar el posicionamiento eliminando la clase "footer_Fixed" de la etiqueta FOOTER
-    TODO: corregir errores en la implementacion utilizando debidamente los elemenots de Bootstrap. La distibucion falla, debido a que no respeto
-    los diseños entregados. Falta fusionar los elementos que se van a mostrar tanto en escritorio como en Movil. ver las notas en la seccion correspondiente    
+    TODO: Diseñar e implementar esta pagina para mostrar todos los elementos del salon de la fama
 -->
 
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
-
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="theme-color" content="#0a47a4">
     <link rel="icon" href="../../resources/img/wcw6xZWO_400x400.jpg" type="image/png" sizes="16x16">
     <!-- Bootstrap CSS -->
@@ -28,12 +26,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap" rel="stylesheet">
-    <title>UNAM Mobile: Conocenos</title>
-
+    <title>UNAM Mobile: Salon de la fama</title>
 </head>
 
 <body>
-
     <!--Barra de navegación del sitio-->
     <nav class="navbar navbar-expand-md navbar-dark fixed-top">
         <a class="navbar-brand" href="../index.html">
@@ -55,9 +51,9 @@
                     <a class="nav-link" href="./eventos.html">Eventos</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link active" href="./conocenos.html">Conocenos</a>
+                    <a class="nav-link" href="./conocenos.html">Conocenos</a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item active">
                     <a class="nav-link" href="./salon_Fama.html">Salón de la fama</a>
                 </li>
                 <li class="nav-item">
@@ -66,67 +62,12 @@
             </ul>
         </div>
     </nav>
-    <!--Presentacion en Escritorio-->
-
-    <!--TODO: Añadir elementos declarados por ESPEJEL y añadir clausulas de BOOTStrap para ocultar/mostrar los elementos creados por espejel para resoluciones
-    grandes y los de anibal para resoluciones pequeñas, todo en el mismo documento-->
-
-    <!--TODO: Seccion de Anibal; Corregir implementacion utilizando Cards con TABS en vez de los contenedores UTILIZADOS AQUI
-    Esta definicion, funciona pero tiene serios problemas:
-    1- Esta fijado hasta ARRIBA y queda cubierto por el NAVBAR
-    2- No se Aprovecha correctamente el Ancho del contenedor a menos que se declare un container Fluid en todo el documento, y eso afecta al navbar
-    3- Es mas facil utilizar las CARD con pestañas en vez de utilizar dos contenedores separados y con los enlaces anclados-->
-    <br><br><br><br>
-    <!--Estos br se utilizaron para bajar el contenido que quedaba atras del navbar-->
-    <!--Presentacion en Movil-->
-    <div class="container-fluid sticky-top w-100">
-        <div class="row bg-dark w-100 ">
-            <div class="col-3 col-sm-3 col-md-3 d-inline btn btn-dark w-100"><a class="text-light" href="#l1">link</a> </div>
-            <div class="col-3 col-sm-3 col-md-3 d-inline btn btn-dark w-100"><a class="text-light" href="#l2">link</a></div>
-            <div class="col-3 col-sm-3 col-md-3 d-inline btn btn-dark w-100"><a class="text-light" href="#l3">link</a></div>
-            <div class="col-3 col-sm-3 col-md-3 d-inline btn btn-dark w-100"><a class="text-light" href="#l4">link</a></div>
-        </div>
-    </div>
-    <div class="container-fluid w-100">
-        <br>
-        <br>
-        <br>
-        <div class="container bg-ligth ">
-            <div class="row">
-                <div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 text-center">
-                    <img src="../../resources/img/unammobile.jpg" class="brand-img ">
-                </div>
-                <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 text-center">
-                    <p>
-                        unammobile hizo cosas chingonas con nosotros no con nadie mas.-
-                    </p>
-                </div>
-            </div>
-        </div>
-        <br>
-        <br>
-        <br>
-        <div class="container bg-ligth ">
-            <div class="row">
-                <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 text-center">
-                    <p>
-                        unammobile hizo cosas chingonas con nosotros no con nadie mas.-
-                    </p>
-                </div>
-                <div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 text-center">
-                    <img src="../../resources/img/unammobile.jpg" class="brand-img ">
-                </div>
-            </div>
-        </div>
-
-    </div>
-
-
 
     <!--Pie de pagina-->
     <footer class="footer_Fixed style_Bars style_footer">
         Laboratorio de innovación UNAM Mobile
     </footer>
+
     <!--Controladores del sitio-->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>

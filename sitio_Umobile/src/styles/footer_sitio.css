@@ -6,6 +6,9 @@ footer {
     height: auto;
     left: 0;
     bottom: 0;
-    /*position: fixed;*/
     text-align: center;
+}
+
+.footer_Fixed {
+    position: fixed;
 }
