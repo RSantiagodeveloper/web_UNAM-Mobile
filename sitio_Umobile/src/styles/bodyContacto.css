@@ -1,32 +1,49 @@
 body {
-  padding-top: 15%;
+    padding-top: 15%;
 }
 
 @media screen and (max-width: 767px) {
-  body {
-    padding-top: 100px;
-  }
+    body {
+        padding-top: 100px;
+    }
 }
 
 p {
-  text-align: center;
+    text-align: center;
 }
 
 p,
 div .col-sm div {
-  margin-left: 8px;
-  margin-right: 8px;
+    margin-left: 8px;
+    margin-right: 8px;
+}
+
+a {
+    margin: 0.5em;
+}
+
+a span i:hover {
+    color: white;
+    transition: color 0.8s linear 0.2s;
 }
 
 #card-1 {
-  --animate-duration: 2000ms;
+    --animate-duration: 2000ms;
 }
+
 #card-2 {
-  --animate-duration: 1600ms;
+    --animate-duration: 1600ms;
 }
+
 #card-3 {
-  --animate-duration: 1200ms;
+    --animate-duration: 1200ms;
 }
+
 #card-4 {
-  --animate-duration: 800ms;
+    --animate-duration: 800ms;
+}
+
+.iconos {
+    margin-top: 100px;
+    margin-bottom: 100px;
 }

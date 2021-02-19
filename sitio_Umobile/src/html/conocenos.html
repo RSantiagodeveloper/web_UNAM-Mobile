@@ -23,8 +23,7 @@
     <link rel="stylesheet" href="../styles/sections_sitio.css">
     <link rel="stylesheet" href="../styles/footer_sitio.css">
     <link rel="stylesheet" href="../styles/site_theme.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
-        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
     <!--Fuentes instaladas desde Google Fonts-->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -43,9 +42,7 @@
             <!--cambiar el jpg por un svg-->
             <img src="../../resources/img/unam_mobile.png" class="brand-img">
         </a>
-        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
-            data-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
-            aria-label="Toggle navigation">
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="collapsibleNavId">
@@ -74,62 +71,150 @@
     </nav>
     <!--Presentacion en Escritorio-->
 
-    <!--TODO: Añadir elementos declarados por ESPEJEL y añadir clausulas de BOOTStrap para ocultar/mostrar los elementos creados por espejel para resoluciones
-    grandes y los de anibal para resoluciones pequeñas, todo en el mismo documento-->
+    <div class="container pt-5 d-none d-sm-none d-md-block" style="margin-top: 128px;">
+        <div class="row justify-content-around">
+            <!-- Secciones -->
+            <div class="col-md-8 contenedorGral">
+                <section class="sections" id="misionvision">
+                    <header>
+                        <h2>Mision Y Vision</h2>
+                        <h3>Subtitulo de la seccion</h3>
+                    </header>
+                    <article class="row">
+                        <div class="col-md-3">
+                            <img src="../../resources/img/aleks.jpg" class="container-fluid" alt="">
+                        </div>
+                        <div class="col-md-9">
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo, saepe quis aperiam vel quos voluptates sapiente accusantium iusto optio error architecto molestias est, mollitia ex iure facere tempora porro. Ea.</p>
+                        </div>
+                    </article>
+                </section>
+                <section class="sections" id="historia">
+                    <header>
+                        <h2>Historia</h2>
+                        <h3>Subtitulo de la seccion</h3>
+                    </header>
+                    <article class="row">
+                        <div class="col-md-9">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, eos. Aliquid quo necessitatibus soluta dolor veritatis eaque nobis? Alias sint dicta eveniet quisquam architecto at dolore rerum magni? Nulla, mollitia.</p>
+                        </div>
+                        <div class="col-md-3">
+                            <img src="../../resources/img/aleks.jpg" class="container-fluid" alt="">
+                        </div>
+                    </article>
+                </section>
+                <section class="sections" id="perfilEquipo">
+                    <header>
+                        <h2>Perfil del Equipo</h2>
+                        <h3>Subtitulo de la seccion</h3>
+                    </header>
+                    <article class="row">
+                        <div class="col-md-3">
+                            <img src="../../resources/img/aleks.jpg" class="container-fluid" alt="">
+                        </div>
+                        <div class="col-md-9">
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo, saepe quis aperiam vel quos voluptates sapiente accusantium iusto optio error architecto molestias est, mollitia ex iure facere tempora porro. Ea.</p>
+                        </div>
+                    </article>
+                </section>
+                <section class="sections" id="conoceEquipo">
+                    <header>
+                        <h2>Conoce al Equipo</h2>
+                        <h3>Subtitulo de la seccion</h3>
+                    </header>
+                    <article class="row">
+                        <div class="col-md-9">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, eos. Aliquid quo necessitatibus soluta dolor veritatis eaque nobis? Alias sint dicta eveniet quisquam architecto at dolore rerum magni? Nulla, mollitia.</p>
+                        </div>
+                        <div class="col-md-3">
+                            <img src="../../resources/img/aleks.jpg" class="container-fluid" alt="">
+                        </div>
+                    </article>
+                </section>
+            </div>
+            <aside class="col-md-3 pl-5">
+                <div class="container_in_aside">
+                    <h3>Contenido</h3>
+                    <ul class="my-5">
+                        <li><a href="#misionvision">Mision y Vision</a></li>
+                        <li><a href="#historia">Historia</a></li>
+                        <li><a href="#perfilEquipo">Perfil del Equipo</a></li>
+                        <li><a href="#conoceEquipo">Conoce al Equipo</a></li>
+                    </ul>
+                </div>
+            </aside>
+        </div>
+    </div>
 
-    <!--TODO: Seccion de Anibal; Corregir implementacion utilizando Cards con TABS en vez de los contenedores UTILIZADOS AQUI
-    Esta definicion, funciona pero tiene serios problemas:
-    1- Esta fijado hasta ARRIBA y queda cubierto por el NAVBAR
-    2- No se Aprovecha correctamente el Ancho del contenedor a menos que se declare un container Fluid en todo el documento, y eso afecta al navbar
-    3- Es mas facil utilizar las CARD con pestañas en vez de utilizar dos contenedores separados y con los enlaces anclados-->
-    <br><br><br><br>
-    <!--Estos br se utilizaron para bajar el contenido que quedaba atras del navbar-->
-    <!--Presentacion en Movil-->
-    <div class="container-fluid sticky-top w-100">
-        <div class="row bg-dark w-100 ">
-            <div class="col-3 col-sm-3 col-md-3 d-inline btn btn-dark w-100"><a class="text-light" href="#l1">link</a>
-            </div>
-            <div class="col-3 col-sm-3 col-md-3 d-inline btn btn-dark w-100"><a class="text-light" href="#l2">link</a>
-            </div>
-            <div class="col-3 col-sm-3 col-md-3 d-inline btn btn-dark w-100"><a class="text-light" href="#l3">link</a>
-            </div>
-            <div class="col-3 col-sm-3 col-md-3 d-inline btn btn-dark w-100"><a class="text-light" href="#l4">link</a>
+    <div class="container-fluid d-block d-sm-block d-md-none" style="margin-top: 128px;">
+        <div class="row">
+            <div class="col-12 col-sm-8 col-md-6 col-lg-4">
+                <div class="card">
+                    <div class="card-header">
+                        <ul class="nav nav-tabs card-header-tabs" id="bologna-list" role="tablist">
+                            <li class="nav-item">
+                                <a class="nav-link active" href="#description" role="tab" aria-controls="description" aria-selected="true">Mision y Vision</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#history" role="tab" aria-controls="history" aria-selected="false">Historia</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#deals" role="tab" aria-controls="deals" aria-selected="false">Perfil</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#team" role="tab" aria-controls="team" aria-selected="false">Equipo</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="card-body">
+                        <h4 class="card-title">Bologna</h4>
+                        <h6 class="card-subtitle mb-2">Emilia-Romagna Region, Italy</h6>
+
+                        <div class="tab-content mt-3">
+                            <div class="tab-pane active" id="description" role="tabpanel">
+                                <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi beatae amet accusantium veniam ex. Dignissimos quo debitis aliquam, rem impedit pariatur magni natus accusamus! Quo animi quae labore magni veniam magnam
+                                    iusto praesentium odit corrupti dolorem. Id harum fugiat odit officiis, voluptas facere illo architecto dicta sequi iure consectetur laborum excepturi incidunt error earum? Neque delectus necessitatibus totam, sequi,
+                                    aspernatur quod voluptatum sint repellendus molestias reprehenderit nostrum iste quis aut quisquam natus. Optio quibusdam dignissimos incidunt dolor, nesciunt deserunt, eaque dolore ut eos ullam, repellendus illo ipsam?
+                                    Corrupti, molestiae porro eaque fugit aut, dolore quo expedita autem totam ipsum eligendi?</p>
+                                <a href="#" class="card-link text-danger">Read more</a>
+                            </div>
+
+                            <div class="tab-pane" id="history" role="tabpanel" aria-labelledby="history-tab">
+                                <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus laudantium at eius ipsa hic voluptatibus quae incidunt a repellendus nemo voluptas ipsam aperiam architecto asperiores molestiae, in sint quasi. Quae fugit
+                                    debitis est amet nulla error sed at eaque nisi ea possimus voluptatem, beatae maiores quas nihil non sunt molestias, animi, eum expedita consequatur a aspernatur. Dignissimos, officiis reprehenderit adipisci esse, nemo
+                                    doloremque magnam voluptate tempore obcaecati, pariatur non voluptatem praesentium rem repudiandae cupiditate hic. Molestiae nisi ipsa, repellendus quos molestias, porro provident dignissimos cupiditate aliquid, ullam
+                                    iste consectetur qui laborum quas eum similique fuga sint? Soluta fuga cum cupiditate?</p>
+                                <a href="#" class="card-link text-danger">Read more</a>
+                            </div>
+
+                            <div class="tab-pane" id="deals" role="tabpanel" aria-labelledby="deals-tab">
+                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur laboriosam officia, error dolore consequuntur saepe recusandae! Quasi quas eius possimus nihil repellendus incidunt perspiciatis, corrupti enim reiciendis
+                                    in eos ea, veritatis rerum perferendis quod adipisci accusantium consectetur magni laudantium quibusdam provident dolore ratione? Eius corporis dolorem blanditiis quis asperiores quibusdam tempora, numquam ex laborum,
+                                    magnam omnis deserunt suscipit quo corrupti obcaecati iste necessitatibus reiciendis quam neque. Nobis velit optio a. Iste natus cumque omnis beatae maxime sunt tenetur consequuntur aut ipsum fuga quisquam quia delectus
+                                    repudiandae dolorum, molestiae aspernatur. Rem at facilis consectetur, velit nostrum aspernatur quos quod modi pariatur.</p>
+                                <a href="#" class="btn btn-danger btn-sm">Get Deals</a>
+                            </div>
+
+                            <div class="tab-pane" id="team" role="tabpanel" aria-labelledby="deals-tab">
+                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur laboriosam officia, error dolore consequuntur saepe recusandae! Quasi quas eius possimus nihil repellendus incidunt perspiciatis, corrupti enim reiciendis
+                                    in eos ea, veritatis rerum perferendis quod adipisci accusantium consectetur magni laudantium quibusdam provident dolore ratione? Eius corporis dolorem blanditiis quis asperiores quibusdam tempora, numquam ex laborum,
+                                    magnam omnis deserunt suscipit quo corrupti obcaecati iste necessitatibus reiciendis quam neque. Nobis velit optio a. Iste natus cumque omnis beatae maxime sunt tenetur consequuntur aut ipsum fuga quisquam quia delectus
+                                    repudiandae dolorum, molestiae aspernatur. Rem at facilis consectetur, velit nostrum aspernatur quos quod modi pariatur.</p>
+                                <a href="#" class="btn btn-danger btn-sm">Get Deals</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-    <div class="container-fluid w-100">
-        <br>
-        <br>
-        <br>
-        <div class="container bg-ligth ">
-            <div class="row">
-                <div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 text-center">
-                    <img src="../../resources/img/unammobile.jpg" class="brand-img ">
-                </div>
-                <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 text-center">
-                    <p>
-                        unammobile hizo cosas chingonas con nosotros no con nadie mas.-
-                    </p>
-                </div>
-            </div>
-        </div>
-        <br>
-        <br>
-        <br>
-        <div class="container bg-ligth ">
-            <div class="row">
-                <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 text-center">
-                    <p>
-                        unammobile hizo cosas chingonas con nosotros no con nadie mas.-
-                    </p>
-                </div>
-                <div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 text-center">
-                    <img src="../../resources/img/unammobile.jpg" class="brand-img ">
-                </div>
-            </div>
-        </div>
 
-    </div>
+    <script>
+        $('#bologna-list a').on('click', function(e) {
+            e.preventDefault()
+            $(this).tab('show')
+        })
+    </script>
 
 
 
@@ -138,15 +223,9 @@
         Copyright © Laboratorio de Innovación - UNAM Mobile
     </footer>
     <!--Controladores del sitio-->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"
-        integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF"
-        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
 </body>
 
 </html>

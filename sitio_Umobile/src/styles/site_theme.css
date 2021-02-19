@@ -10,6 +10,24 @@
     font-family: 'Oxygen', sans-serif;
 }
 
+body {
+    background: linear-gradient(45deg, #0a47a4, #c9a227, #0a47a4, #c9a227);
+    background-size: 400% 400%;
+    animation: gradient 25s linear infinite;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
 
 /*Estilo de las barras de navegacion y de pie de pagina*/
 
@@ -94,11 +112,12 @@ header.masthead {
     padding-bottom: 6rem;
     text-align: center;
     color: #fff;
-    background-image: url("../../resources/img/vapo3.jpg");
+    /*background-image: url("../../resources/img/vapo3.jpg");
     background-repeat: no-repeat;
     background-attachment: scroll;
     background-position: center center;
-    background-size: cover;
+    background-size: cover;*/
+    background-size: 100%;
 }
 
 .avisos {
@@ -110,4 +129,17 @@ header.masthead {
     font-family: 'Oxygen', sans-serif;
     font-weight: 700;
     text-shadow: #0a47a4;
+}
+
+body {
+    /*background-image: linear-gradient(to bottom, #0f479e 50%, #ffffff 100%);*/
+    background-repeat: no-repeat;
+}
+
+#cuerpo-index {
+    background-image: url("../../resources/img/vapo3.jpg");
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center center;
+    background-size: cover;
 }
