@@ -1,0 +1,25 @@
+/*centrado de los titulos de cada articulo*/
+
+section header {
+    text-align: center;
+}
+
+
+/*justificado de los textos en los articulos*/
+
+div .col-md-9 p {
+    text-align: justify;
+}
+
+
+/*Formateado de los textos en los card de miembros*/
+
+div .card-body h6 {
+    text-align: center;
+    font-size: 1.5em;
+}
+
+div .card-body p {
+    text-align: justify;
+    font-size: 0.90em;
+}
