@@ -145,3 +145,7 @@ body {
     background-position: center center;
     background-size: cover;
 }
+
+h1 {
+    color: white;
+}
