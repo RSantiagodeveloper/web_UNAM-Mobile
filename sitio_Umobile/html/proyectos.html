@@ -6,14 +6,14 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="theme-color" content="#0a47a4">
-    <link rel="icon" href="../../resources/img/unam_mobile.png" type="image/png" sizes="16x16">
+    <link rel="icon" href="../resources/img/unam_mobile.png" type="image/png" sizes="16x16">
 
     <!-- CSS local -->
-    <!--corregiudas las rutas relativas-->
     <link rel="stylesheet" href="../styles/bodyContacto.css">
     <link rel="stylesheet" href="../styles/navbar_sitio.css">
     <link rel="stylesheet" href="../styles/footer_sitio.css">
     <link rel="stylesheet" href="../styles/site_theme.css">
+    <link rel="stylesheet" href="../styles/cards.css">
     <!-- Bootstrap CSS CND -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
     <!-- Font Awesome CND -->
@@ -24,7 +24,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap" rel="stylesheet">
     <!-- Agregando CDN de animaciones (todas las animaciones se pueden encontrar en: Animate.style) -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-    <title>UNAM Mobile: Contacto</title>
+    <title>UNAM Mobile: Proyectos</title>
 </head>
 
 <body id="cuerpo-index">
@@ -32,14 +32,15 @@
     <nav class="navbar navbar-expand-md navbar-dark fixed-top">
         <a class="navbar-brand" href="../index.html">
             <!--cambiar el jpg por un svg-->
-            <img src="../../resources/img/unam_mobile.png" class="brand-img">
+            <img src="../resources/img/unam_mobile.png" class="brand-img">
         </a>
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+            <span class="navbar-toggler-icon"></span>
+        </button>
         <div class="collapse navbar-collapse" id="collapsibleNavId">
             <ul class="navbar-nav ml-auto pt-3">
-                <li class="nav-item">
+                <!-- Se agrega animación de la pestaña actual nada más para crear un efecto de click -->
+                <li class="nav-item active animate__animated animate__bounceIn">
                     <a class="nav-link" href="./proyectos.html">Proyectos</a>
                 </li>
                 <li class="nav-item">
@@ -54,63 +55,68 @@
                 <li class="nav-item">
                     <a class="nav-link" href="./salon_Fama.html">Salón de la fama</a>
                 </li>
-                <!-- Se agrega animación de la pestaña actual nada más para crear un efecto de click -->
-                <li class="nav-item active animate__animated animate__bounceIn">
+                <li class="nav-item">
                     <a class="nav-link" href="./contacto.html">Contacto</a>
                 </li>
             </ul>
         </div>
     </nav>
-    <!-- Navbar -->
+    <!-- Fin del nav bar -->
 
-    <div class="container" id="page-container">
-        <div class="row">
-            <div class="col-md-6">
-                <!-- Se agrega animación -->
-                <p class="animate__animated animate__fadeInDown">
-                    <!-- Info de contacto: Sustituir texto mostrado en las etiquetas h-->
-                    <br><br>
-                    <div class="container text-center mt-8 bg-dark">
-                        <h2 style="color: white">Informacion de contacto y ubicación:</h2><br>
-                        <p style="color: white">Nos ubicamos en el Edificio Q ("Luis G. Valdez Vallejo") de la facultad de Ingenieria Salon 308</p>
-                        <p style="color: white"></p>
+    <!-- Agregando un contenedor fluido -->
+    <div class="container-fluid" style="margin-bottom: 32px;">
 
+        <!-- Creando un row con d-flex centrado -->
+        <div class="row d-flex justify-content-center align-items-center">
+
+            <!-- Creando una flip card que entrará de forma automática -->
+            <a href="https://mobile.unam.mx/pumahome/">
+                <!-- Se agrega animación (el id card-# controla la velocidad de la animación)-->
+                <div id="card-1" class="flip-card animate__animated animate__backInLeft">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="../resources/img/logos_proyectos/pumahome.png" alt="Avatar" style="width:300px;height:300px;">
+                            <footer>
+                                <h1>Puma Home</h1>
+                            </footer>
+                        </div>
+                        <div class="flip-card-back">
+                            <h1>Puma Home</h1>
+                            <p>Aplicacón móvil multiplataforma (Android/iOS) que tiene el objetivo de servir como medio oficial para las clases en línea de la universidad</p>
+                        </div>
                     </div>
-
-                </p>
-                <!-- Se agrega animación -->
-                <p class="iconos animate__animated animate__fadeInDown">
-                    <!-- Iconos de redes sociales -->
-                    <a href="https://www.facebook.com/UNAM.Mobile/"><span style="color: #0078d7;"><i class="fab fa-facebook fa-3x"></i></span></a>
-                    <a href="https://www.instagram.com/unam_mobile/?hl=es"><span style="color: #e1306c"><i class="fab fa-instagram fa-3x"></i></span></a>
-                    <a href="https://www.youtube.com/user/UNAMMOBILEHD"><span style="color: #ff0000"><i class="fab fa-youtube fa-3x"></i></span></a>
-                    <a href="https://twitter.com/unam_mobile"><span style="color: #1da1f2"><i class="fab fa-twitter fa-3x"></i></span></a>
-                    <a href="mailto:unam.mobile.contacto@gmail.com"><span style="color: #0a47a4"><i class="fa fa-envelope fa-3x"></i></span></a>
-                </p>
-            </div>
-            <!-- Se agrega animación -->
-            <div class="col-md-6 animate__animated animate__fadeInDown">
-                <!-- Columnas SM -->
-                <div>
-                    <!-- Mapa de google maps iframe -->
-                    <iframe width="100%" height="400" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d665.5554788162337!2d-99.18225040373919!3d19.327961144701952!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85ce0004531a34c7%3A0x500b22918c9ef998!2sFacultad%20de%20Ingenier%C3%ADa%2C%20Cto.%20Exterior%2C%20C.U.%2C%20Coyoac%C3%A1n%2C%2004510%20Ciudad%20de%20M%C3%A9xico%2C%20CDMX!5e0!3m2!1ses!2smx!4v1614029588770!5m2!1ses!2smx">
-                    </iframe>
                 </div>
-            </div>
+            </a>
+
+            <!-- Creando una flip card que entrará de forma automática -->
+            <a href="https://mobile.unam.mx/eureka/html/">
+                <!-- Se agrega animación (el id card-# controla la velocidad de la animación)-->
+                <div id="card-2" class="flip-card animate__animated animate__backInLeft">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="../resources/img/logos_proyectos/eureka_.png" alt="Avatar" style="width:300px;height:300px;">
+                            <footer>
+                                <h1>Eureka!</h1>
+                            </footer>
+                        </div>
+                        <div class="flip-card-back">
+                            <h1>Eureka!</h1>
+                            <p>Plataforma web que pretende ser el primer foro abierto universitario que ofrezca la posibilidad de publicar temas para su discusión y aprender algo nuevo todos los días</p>
+                        </div>
+                    </div>
+                </div>
+            </a>
         </div>
-        <!-- Body -->
     </div>
 
     <!-- Footer -->
-    <footer class="style_Bars style_footer fixed-bottom">
+    <footer class="footer_Fixed style_Bars style_footer fixed_bottom">
         Copyright © Laboratorio de Innovación - UNAM Mobile
     </footer>
-
     <!--Controladores del sitio-->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
-
 </body>
 
 </html>
