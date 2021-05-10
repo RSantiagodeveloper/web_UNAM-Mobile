@@ -1,4 +1,9 @@
 # Web_oficial_UNAM_MOBILE
+## AVISO
+ 
+ * Este repositorio es una copia autorizada por el equipo de UNAM Mobile generación 2020 que se me permitio utilizar para comprobar mi participacion en el desarrollo de los proyectos del periodo Enero 2020 - Mayo 2021
+ * [UNAM_MOBILE](https://mobile.unam.mx/) Sitio Oficial del laboratorio de innovacion UNAM Mobile
+
 ## Descripción:
  * Proyecto enfocado a la creacion y mantenimiento del sitio web oficial para el grupo estudiantil
  perteneciente al laboratorio de Innovacion UNAM Mobile
